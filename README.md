@@ -37,10 +37,6 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 
 - scipy
 
-## How to setup the tensorflow
-
-A brief manual on how to install tensorflow and related packages is provided in [English](./installing_tensorflow_eng.md) and [简体中文](./installing_tensorflow_chn.md). Contact **Liang Huang** (lianghuang AT zjut.edu.cn) if you need further help.
-
 ## How the code works
 
 run the file, [main.py](main.py)
