@@ -1,6 +1,6 @@
 # DROO
 
-Deep Reinforcement Learning for Online Ofﬂoading in Wireless Powered Mobile-Edge Computing Networks
+*Deep Reinforcement Learning for Online Ofﬂoading in Wireless Powered Mobile-Edge Computing Networks*
 
 Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1], which uses the wireless channel gains as the input and the binary computing mode selection results as the output of a deep neural network (DNN). It includes:
 
