@@ -132,28 +132,18 @@ class MemoryDNN:
         assert(self.cost >0)    
         self.cost_his.append(self.cost)
 
-    def decode(self, h, k = 1, mode = 'knm'):
+    def decode(self, h, k = 1, mode = 'OP'):
         # to have batch dimension when feed into tf placeholder
         h = h[np.newaxis, :]
 
         m_pred = self.sess.run(self.m_pred, feed_dict={self.h: h})
 
-        # print("before sigmoid: ",m_pred)
-        # # convert mode to be {0, 1}
-        # m_pred = tf.sigmoid(m_pred)
-        # print("after sigmoid: ",self.sess.run(m_pred))
-        # m_pred = tf.greater(m_pred, 0.5)
-        # print(self.sess.run(m_pred))
-        # m_pred = tf.cast(m_pred, tf.int32)
-        # print(self.sess.run(m_pred))
-        
-        # return self.sess.run(m_pred)
-        if mode is 'knm':
+        if mode is 'OP':
             return self.knm(m_pred[0], k)
-        elif mode is 'knn':
+        elif mode is 'KNN':
             return self.knn(m_pred[0], k)
         else:
-            print("The action selection must be 'knm' or 'knn'")
+            print("The action selection must be 'OP' or 'KNN'")
     
     def knm(self, m, k = 1):
         # return k-nearest-mode
