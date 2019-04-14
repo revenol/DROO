@@ -10,12 +10,12 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 
   - **data_#.mat**: training and testing data sets, where # = {10, 20, 30} is the user number
 
-- [main.py](main.py): run this file, inclduing setting system parameters
+- [main.py](main.py): run this file, including setting system parameters
 
 
 ## About our works
 
-1. Liang Huang, Suzhi Bi, and Ying-jun Angela Zhang, **Deep Reinforcement Learning for Online Ofﬂoading in Wireless Powered Mobile-Edge Computing Networks**, submitted to *IEEE Journal on Selected Areas in Communications*.
+1. Liang Huang, Suzhi Bi, and Ying-jun Angela Zhang, **Deep Reinforcement Learning for Online Ofﬂoading in Wireless Powered Mobile-Edge Computing Networks**, on [arxiv:1808.01977](https://arxiv.org/abs/1808.01977).
 
 ## About authors
 
