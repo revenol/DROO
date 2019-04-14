@@ -10,7 +10,7 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 
   - **data_#.mat**: training and testing data sets, where # = {10, 20, 30} is the user number
 
-- [main.py](main.py): run this file, inclduing setting system parameters
+- [main.py](main.py): run this file, including setting system parameters
 
 
 ## About our works
