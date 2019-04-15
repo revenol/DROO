@@ -30,7 +30,7 @@ def plot_gain( gain_his):
     plt.xlabel('learning steps')
     plt.show()
     
-def bisection(h, M):
+def bisection(h, M, weights=[]):
     # the bisection algorithm proposed by Suzhi BI
     # average time to find the optimal: 0.012535839796066284 s
 
@@ -52,8 +52,13 @@ def bisection(h, M):
     hi=np.array([h[i] for i in M0])
     hj=np.array([h[i] for i in M1])
     
-    wi=np.array([1.5 if M0[i]%2==1 else 1 for i in range(len(M0))])
-    wj=np.array([1.5 if M1[i]%2==1 else 1 for i in range(len(M1))])
+
+    if len(weights) == 0:
+        # default weights [1, 1.5, 1, 1.5, 1, 1.5, ...]
+        weights = [1.5 if i%2==1 else 1 for i in range(len(M))]
+        
+    wi=np.array([weights[M0[i]] for i in range(len(M0))])
+    wj=np.array([weights[M1[i]] for i in range(len(M1))])
     
     
     def sum_rate(x):
@@ -88,7 +93,7 @@ def bisection(h, M):
     UB = 999999999
     LB = 0
     while UB - LB > delta:
-        v = (UB + LB)/2
+        v = (float(UB) + LB)/2
         if Q(v) > 0:
             LB = v
         else:
@@ -99,6 +104,7 @@ def bisection(h, M):
         x.append(tau(v, j))
 
     return sum_rate(x), x[0], x[1:]
+
 
 
 def cd_method(h):

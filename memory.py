@@ -177,6 +177,6 @@ class MemoryDNN:
     def plot_cost(self):
         import matplotlib.pyplot as plt
         plt.plot(np.arange(len(self.cost_his))*self.training_interval, self.cost_his)
-        plt.ylabel('Training Loss L')
+        plt.ylabel('Training Loss')
         plt.xlabel('Time Frames')
         plt.show()

@@ -10,7 +10,11 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 
   - **data_#.mat**: training and testing data sets, where # = {10, 20, 30} is the user number
 
-- [main.py](main.py): run this file, including setting system parameters
+- [main.py](main.py): run this file for DROO, including setting system parameters
+
+- [demo_alternate_weights.py](demo_alternate_weights.py): run this file to evaluate the performance of DROO when WDs' weights are alternated
+
+- [demo_on_off.py](demo_on_off.py): run this file to evaluate the performance of DROO when some WDs are randomly turning on/off
 
 
 ## About our works
@@ -35,4 +39,8 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 
 ## How the code works
 
-run the file, [main.py](main.py)
+- For DROO algorithm, run the file, [main.py](main.py)
+
+- For DROO demo with laternating-weight WDs, run the file, [demo_alternate_weights.py](demo_alternate_weights.py)
+
+- For DROO demo with ON-OFF WDs, run the file, [demo_on_off.py](demo_on_off.py)
