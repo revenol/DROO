@@ -17,9 +17,9 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 - [demo_on_off.py](demo_on_off.py): run this file to evaluate the performance of DROO when some WDs are randomly turning on/off
 
 
-## About our works
+## Cite this work
 
-1. Liang Huang, Suzhi Bi, and Ying-jun Angela Zhang, **Deep Reinforcement Learning for Online Computation Offloading in Wireless Powered Mobile-Edge Computing Networks**, *IEEE Transactions on Mobile Computing*, [early access](https://ieeexplore.ieee.org/document/8771176). Preview available on [arxiv:1808.01977](https://arxiv.org/abs/1808.01977).
+1. L. Huang, S. Bi, and Y. J. Zhang, “Deep reinforcement learning for online computation offloading in wireless powered mobile-edge computing networks,” IEEE Trans. Mobile Compt., [DOI:10.1109/TMC.2019.2928811](https://ieeexplore.ieee.org/document/8771176), Jul. 2019.
 
 ## About authors
 
