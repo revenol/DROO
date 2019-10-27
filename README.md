@@ -23,11 +23,11 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 
 ## About authors
 
-- Liang HUANG, lianghuang AT zjut.edu.cn
+- [Liang HUANG](https://scholar.google.com/citations?user=NifLoZ4AAAAJ), lianghuang AT zjut.edu.cn
 
-- Suzhi BI, bsz AT szu.edu.cn
+- [Suzhi BI](https://scholar.google.com/citations?user=uibqC-0AAAAJ), bsz AT szu.edu.cn
 
-- Ying Jun (Angela) Zhang, yjzhang AT ie.cuhk.edu.hk
+- [Ying Jun (Angela) Zhang](https://scholar.google.com/citations?user=iOb3wocAAAAJ), yjzhang AT ie.cuhk.edu.hk
 
 ## Required packages
 
