@@ -19,7 +19,7 @@
 #
 #
 #  References:
-#  [1] 1. Liang Huang, Suzhi Bi, and Ying-jun Angela Zhang, “Deep Reinforcement Learning for Online Ofﬂoading in Wireless Powered Mobile-Edge Computing Networks”, on arxiv:1808.01977
+#  [1] 1. Liang Huang, Suzhi Bi, and Ying-Jun Angela Zhang, "Deep Reinforcement Learning for Online Offloading in Wireless Powered Mobile-Edge Computing Networks," in IEEE Transactions on Mobile Computing, early access, 2019, DOI:10.1109/TMC.2019.2928811.
 #  [2] S. Bi and Y. J. Zhang, “Computation rate maximization for wireless powered mobile-edge computing with binary computation ofﬂoading,” IEEE Trans. Wireless Commun., vol. 17, no. 6, pp. 4177-4190, Jun. 2018.
 #
 # version 1.0 -- July 2018. Written by Liang Huang (lianghuang AT zjut.edu.cn)
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     print('#user = %d, #channel=%d, K=%d, decoder = %s, Memory = %d, Delta = %d'%(N,n,K,decoder_mode, Memory, Delta))
     # Load data
     channel = sio.loadmat('./data/data_%d' %N)['input_h']
-    rate = sio.loadmat('./data/data_%d' %N)['output_obj']
+    rate = sio.loadmat('./data/data_%d' %N)['output_obj'] # this rate is only used to plot figures; never used to train DROO.
 
     # increase h to close to 1 for better training; it is a trick widely adopted in deep learning
     channel = channel * 1000000
@@ -130,7 +130,15 @@ if __name__ == "__main__":
         r_list = []
         for m in m_list:
             r_list.append(bisection(h/1000000, m)[0])
-
+            
+        # encode the mode with largest reward
+        mem.encode(h, m_list[np.argmax(r_list)])
+        # the main code for DROO training ends here
+        
+        
+        
+        
+        # the following codes store some interested metrics for illustrations
         # memorize the largest reward
         rate_his.append(np.max(r_list))
         rate_his_ratio.append(rate_his[-1] / rate[i_idx][0])
@@ -138,8 +146,6 @@ if __name__ == "__main__":
         k_idx_his.append(np.argmax(r_list))
         # record K in case of adaptive K
         K_his.append(K)
-        # encode the mode with largest reward
-        mem.encode(h, m_list[np.argmax(r_list)])
         mode_his.append(m_list[np.argmax(r_list)])
 
 
