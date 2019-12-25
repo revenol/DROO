@@ -44,3 +44,5 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 - For DROO demo with laternating-weight WDs, run the file, [demo_alternate_weights.py](demo_alternate_weights.py)
 
 - For DROO demo with ON-OFF WDs, run the file, [demo_on_off.py](demo_on_off.py)
+
+The code is implemented and verified based on Tensorflow 1.10.0, which is uncompatable with Tensorflow 2.
