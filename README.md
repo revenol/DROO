@@ -45,4 +45,4 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 
 - For DROO demo with ON-OFF WDs, run the file, [demo_on_off.py](demo_on_off.py)
 
-The code is implemented and verified based on Tensorflow 1.10.0, which is uncompatable with Tensorflow 2.
+## The DROO algorithm is coded based on Tensorflow 1.\*. If you are using Tensorflow 2, please refer to [DROO-tensorflow2](https://github.com/revenol/DROO-tensorflow2).
