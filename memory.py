@@ -148,8 +148,14 @@ class MemoryDNN:
     def knm(self, m, k = 1):
         # return k-nearest-mode
         m_list = []
+        
+        # generate the ﬁrst binary ofﬂoading decision 
+        # note that here 'm' is the output of DNN before the sigmoid activation function, in the field of all real number. 
+        # Therefore, we compare it with '0' instead of 0.5 in equation (8). Since, sigmod(0) = 0.5.
         m_list.append(1*(m>0))
+        
         if k > 1:
+            # generate the remaining K-1 binary ofﬂoading decisions with respect to equation (9)
             m_abs = abs(m)
             idx_list = np.argsort(m_abs)[:k-1]
             for i in range(k-1):
