@@ -2,9 +2,10 @@
 
 *Deep Reinforcement Learning for Online Computation Offloading in Wireless Powered Mobile-Edge Computing Networks*
 
-Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1], which uses the wireless channel gains as the input and the binary computing mode selection results as the output of a deep neural network (DNN). It includes:
+Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Computing [1], which uses the time-varying wireless channel gains as the input and generates the binary offloading decisions. It includes:
 
 - [memory.py](memory.py): the DNN structure for the WPMEC, inclduing training structure and test structure
+- [optimization.py](optimization.py): solve the resource allocation problem
 
 - [data](./data): all data are stored in this subdirectory, includes:
 
@@ -45,4 +46,4 @@ Python code to reproduce our works on Wireless-powered Mobile-Edge Computing [1]
 
 - For DROO demo with ON-OFF WDs, run the file, [demo_on_off.py](demo_on_off.py)
 
-## The DROO algorithm is coded based on Tensorflow 1.\*. If you are using Tensorflow 2, please refer to [DROO-tensorflow2](https://github.com/revenol/DROO-tensorflow2).
+## The DROO algorithm is coded based on Tensorflow 1.\*. If you are are fresh to Tensorflow or aleady using Tensorflow 2, please refer to [DROO-tensorflow2](https://github.com/revenol/DROO-tensorflow2), which is much cleaner and easier to follow.
