@@ -1,3 +1,6 @@
+# Please refer to [DROO-tensorflow2](https://github.com/revenol/DROO-tensorflow2) for native Tensorflow 2 version of DROO.
+
+
 # DROO
 
 *Deep Reinforcement Learning for Online Computation Offloading in Wireless Powered Mobile-Edge Computing Networks*
