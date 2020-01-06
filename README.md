@@ -46,4 +46,4 @@ Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Com
 
 - For DROO demo with ON-OFF WDs, run the file, [demo_on_off.py](demo_on_off.py)
 
-## The DROO algorithm is coded based on Tensorflow 1.\*. If you are are fresh to Tensorflow or aleady using Tensorflow 2, please refer to [DROO-tensorflow2](https://github.com/revenol/DROO-tensorflow2), which is much cleaner and easier to follow.
+## The DROO algorithm is coded based on Tensorflow 1.\*. If you are are fresh to Tensorflow or already using Tensorflow 2, please refer to [DROO-tensorflow2](https://github.com/revenol/DROO-tensorflow2), whose codes are much cleaner and easier to follow.
