@@ -1,4 +1,4 @@
-## The DROO algorithm is coded based on Tensorflow 1.\*. If you code with the Tensorflow 2, please refer to [DROO-tensorflow2](https://github.com/revenol/DROO-tensorflow2). If you code with PyTorch, please refer to [DROO-PyTorch](https://github.com/revenol/DROO-PyTorch). If you are fresh to deep learning, please start with [Tensorflow 2](https://www.tensorflow.org/install) or [PyTorch](https://pytorch.org/get-started/locally/), whose codes are much cleaner and easier to follow.
+## The DROO algorithm is coded based on Tensorflow 1.\*. If you code with Tensorflow 2, please refer to [DROO-tensorflow2](https://github.com/revenol/DROO-tensorflow2). If you code with PyTorch, please refer to [DROO-PyTorch](https://github.com/revenol/DROO-PyTorch). If you are fresh to deep learning, please start with [Tensorflow 2](https://www.tensorflow.org/install) or [PyTorch](https://pytorch.org/get-started/locally/), whose codes are much cleaner and easier to follow.
 
 # DROO
 
