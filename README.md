@@ -4,7 +4,7 @@
 
 Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Computing [1], which uses the time-varying wireless channel gains as the input and generates the binary offloading decisions. It includes:
 
-- [memory.py](memory.py): the DNN structure for the WPMEC, inclduing training structure and test structure, implemented based on tenforflow 1.\*.
+- [memory.py](memory.py): the DNN structure for the WPMEC, inclduing training structure and test structure, implemented based on [Tensorflow 1.x](https://www.tensorflow.org/install/pip).
   - [memoryTF2.py](memoryTF2.py): Implemented based on [Tensorflow 2](https://www.tensorflow.org/install).
   - [memoryPyTorch.py](memoryPyTorch.py): Implemented based on [PyTorch](https://pytorch.org/get-started/locally/).
 - [optimization.py](optimization.py): solve the resource allocation problem
@@ -13,7 +13,7 @@ Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Com
 
   - **data_#.mat**: training and testing data sets, where # = {10, 20, 30} is the user number
 
-- [main.py](main.py): run this file for DROO, including setting system parameters, implemented based on tenforflow 1.*
+- [main.py](main.py): run this file for DROO, including setting system parameters, implemented based on [Tensorflow 1.x](https://www.tensorflow.org/install/pip)
   - [mainTF2.py](mainTF2.py): Implemented based on [Tensorflow 2](https://www.tensorflow.org/install).
   - [mainPyTorch.py](mainPyTorch.py): Implemented based on [PyTorch](https://pytorch.org/get-started/locally/).
 
@@ -46,8 +46,21 @@ Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Com
 
 - For DROO algorithm, run the file, [main.py](main.py). If you code with Tenforflow 2 or PyTorch, run [mainTF2.py](mainTF2.py) or [mainPyTorch.py](mainPyTorch.py), respectively.
 
-- For DROO demo with laternating-weight WDs, run the file, [demo_alternate_weights.py](demo_alternate_weights.py)
-
-- For DROO demo with ON-OFF WDs, run the file, [demo_on_off.py](demo_on_off.py)
-
-# The DROO algorithm is coded based on Tensorflow 1.\*. If you are fresh to deep learning, please start with [Tensorflow 2](https://www.tensorflow.org/install) or [PyTorch](https://pytorch.org/get-started/locally/), whose codes are much cleaner and easier to follow.
+- For more DROO demos:
+  - Laternating-weight WDs, run the file, [demo_alternate_weights.py](demo_alternate_weights.py)
+  - ON-OFF WDs, run the file, [demo_on_off.py](demo_on_off.py)
+  - Remember to respectively edit the *import MemoryDNN* code from
+    ```
+      from memory import MemoryDNN
+    ```
+    to
+    ```
+      from memoryTF2 import MemoryDNN
+    ```
+    or
+    ```
+      from memoryPyTorch import MemoryDNN
+    ```
+    if you are using Tensorflow 2 or PyTorch.
+    
+### The DROO algorithm is coded based on [Tensorflow 1.x](https://www.tensorflow.org/install/pip). If you are fresh to deep learning, please start with [Tensorflow 2](https://www.tensorflow.org/install) or [PyTorch](https://pytorch.org/get-started/locally/), whose codes are much cleaner and easier to follow.
