@@ -86,7 +86,7 @@ class MemoryDNN:
 
 
         # train the DNN
-        optimizer = optim.Adam(self.model.parameters(), lr=self.lr)
+        optimizer = optim.Adam(self.model.parameters(), lr=self.lr,betas = (0.09,0.999),weight_decay=0.0001) 
         criterion = nn.BCELoss()
         self.model.train()
         optimizer.zero_grad()
