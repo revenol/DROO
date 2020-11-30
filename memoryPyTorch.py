@@ -122,14 +122,14 @@ class MemoryDNN:
 
         if k > 1:
             # generate the remaining K-1 binary ofﬂoading decisions with respect to equation (9)
-            m_abs = abs(m)
+            m_abs = abs(m-0.5)
             idx_list = np.argsort(m_abs)[:k-1]
             for i in range(k-1):
-                if m[idx_list[i]] >0:
-                    # set a positive user to 0
+                if m[idx_list[i]] >0.5:
+                    # set the \hat{x}_{t,(k-1)} to 0
                     m_list.append(1*(m - m[idx_list[i]] > 0))
                 else:
-                    # set a negtive user to 1
+                    # set the \hat{x}_{t,(k-1)} to 1
                     m_list.append(1*(m - m[idx_list[i]] >= 0))
 
         return m_list
