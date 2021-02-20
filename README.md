@@ -24,7 +24,7 @@ Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Com
 
 ## Cite this work
 
-1. L. Huang, S. Bi, and Y. J. Zhang, “[Deep reinforcement learning for online computation offloading in wireless powered mobile-edge computing networks](https://ieeexplore.ieee.org/document/8771176),” IEEE Trans. Mobile Compt., DOI:10.1109/TMC.2019.2928811, Jul. 2019.
+1. L. Huang, S. Bi, and Y. J. Zhang, “[Deep reinforcement learning for online computation offloading in wireless powered mobile-edge computing networks](https://ieeexplore.ieee.org/document/8771176),” IEEE Trans. Mobile Compt., vol. 19, no. 11, pp. 2581-2593, November 2020.
 
 ## About authors
 
