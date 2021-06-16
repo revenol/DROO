@@ -64,3 +64,5 @@ Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Com
     if you are using Tensorflow 2 or PyTorch.
     
 ### The DROO algorithm is coded based on [Tensorflow 1.x](https://www.tensorflow.org/install/pip). If you are fresh to deep learning, please start with [Tensorflow 2](https://www.tensorflow.org/install) or [PyTorch](https://pytorch.org/get-started/locally/), whose codes are much cleaner and easier to follow.
+
+### DROO is illustrated here for single-slot optimization. If you tend to use DROO in multiple-slot continuous control problems, please refer to our [LyDROO](https://github.com/revenol/LyDROO) project.
