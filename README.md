@@ -26,6 +26,20 @@ Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Com
 
 1. L. Huang, S. Bi, and Y. J. Zhang, “[Deep reinforcement learning for online computation offloading in wireless powered mobile-edge computing networks](https://ieeexplore.ieee.org/document/8771176),” IEEE Trans. Mobile Compt., vol. 19, no. 11, pp. 2581-2593, November 2020.
 
+```
+@ARTICLE{huang2020DROO,  
+author={Huang, Liang and Bi, Suzhi and Zhang, Ying-Jun Angela},  
+journal={IEEE Transactions on Mobile Computing},   
+title={Deep Reinforcement Learning for Online Computation Offloading in Wireless Powered Mobile-Edge Computing Networks},   
+year={2020},
+month={November},
+volume={19},  
+number={11},  
+pages={2581-2593},  
+doi={10.1109/TMC.2019.2928811}
+}
+```
+
 ## About authors
 
 - [Liang HUANG](https://scholar.google.com/citations?user=NifLoZ4AAAAJ), lianghuang AT zjut.edu.cn
@@ -47,7 +61,7 @@ Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Com
 - For DROO algorithm, run the file, [main.py](main.py). If you code with Tenforflow 2 or PyTorch, run [mainTF2.py](mainTF2.py) or [mainPyTorch.py](mainPyTorch.py), respectively.
 
 - For more DROO demos:
-  - Laternating-weight WDs, run the file, [demo_alternate_weights.py](demo_alternate_weights.py)
+  - Laternating-weight WDs, run the file, [demo_alternate_weights.py](demo_alternate_weights.
   - ON-OFF WDs, run the file, [demo_on_off.py](demo_on_off.py)
   - Remember to respectively edit the *import MemoryDNN* code from
     ```
