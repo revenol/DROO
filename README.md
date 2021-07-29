@@ -14,8 +14,8 @@ Python code to reproduce our DROO algorithm for Wireless-powered Mobile-Edge Com
   - **data_#.mat**: training and testing data sets, where # = {10, 20, 30} is the user number
 
 - [main.py](main.py): run this file for DROO, including setting system parameters, implemented based on [Tensorflow 1.x](https://www.tensorflow.org/install/pip)
-  - [mainTF2.py](mainTF2.py): Implemented based on [Tensorflow 2](https://www.tensorflow.org/install).
-  - [mainPyTorch.py](mainPyTorch.py): Implemented based on [PyTorch](https://pytorch.org/get-started/locally/).
+  - [mainTF2.py](mainTF2.py): Implemented based on [Tensorflow 2](https://www.tensorflow.org/install). Run this file for DROO if you code with Tensorflow 2.
+  - [mainPyTorch.py](mainPyTorch.py): Implemented based on [PyTorch](https://pytorch.org/get-started/locally/). Run this file for DROO if you code with PyTorch.
 
 - [demo_alternate_weights.py](demo_alternate_weights.py): run this file to evaluate the performance of DROO when WDs' weights are alternated
 
@@ -58,7 +58,7 @@ doi={10.1109/TMC.2019.2928811}
 
 ## How the code works
 
-- For DROO algorithm, run the file, [main.py](main.py). If you code with Tenforflow 2 or PyTorch, run [mainTF2.py](mainTF2.py) or [mainPyTorch.py](mainPyTorch.py), respectively.
+- For DROO algorithm, run the file, [main.py](main.py). If you code with Tenforflow 2 or PyTorch, run [mainTF2.py](mainTF2.py) or [mainPyTorch.py](mainPyTorch.py), respectively. The original DROO algorithm is coded based on [Tensorflow 1.x](https://www.tensorflow.org/install/pip). If you are fresh to deep learning, please start with [Tensorflow 2](https://www.tensorflow.org/install) or [PyTorch](https://pytorch.org/get-started/locally/), whose codes are much cleaner and easier to follow.
 
 - For more DROO demos:
   - Laternating-weight WDs, run the file, [demo_alternate_weights.py](demo_alternate_weights.
@@ -75,8 +75,6 @@ doi={10.1109/TMC.2019.2928811}
     ```
       from memoryPyTorch import MemoryDNN
     ```
-    if you are using Tensorflow 2 or PyTorch.
-    
-### The DROO algorithm is coded based on [Tensorflow 1.x](https://www.tensorflow.org/install/pip). If you are fresh to deep learning, please start with [Tensorflow 2](https://www.tensorflow.org/install) or [PyTorch](https://pytorch.org/get-started/locally/), whose codes are much cleaner and easier to follow.
+    if you are using Tensorflow 2 or PyTorch. 
 
-### DROO is illustrated here for single-slot optimization. If you tend to use DROO in multiple-slot continuous control problems, please refer to our [LyDROO](https://github.com/revenol/LyDROO) project.
+### DROO is illustrated here for single-slot optimization. If you tend to apply DROO for multiple-slot continuous control problems, please refer to our [LyDROO](https://github.com/revenol/LyDROO) project.
